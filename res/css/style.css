@@ -81,6 +81,11 @@ nav div {
     padding: 10px;
 }
 
+nav div ul{
+    flex-grow: 2;
+    padding: 10px;
+}
+
 nav div img {
     height: 100%;
     width: 30px;
@@ -201,4 +206,7 @@ nav div.avatar-container {
 
 .like-button.liked {
     background-color: #01579b;
+}
+.avatar-dropdown {
+    display: none;
 }
