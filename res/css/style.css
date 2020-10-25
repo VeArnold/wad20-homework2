@@ -208,6 +208,18 @@ nav div.avatar-container {
     background-color: #01579b;
 }
 
+.follow-button {
+    width: 120px;
+    height: 35px;
+    color: white;
+    background-color: purple;
+}
+
+.followed {
+    color: purple;
+    background-color: white;
+}
+
 .avatar-dropdown {
     display: none;
 }

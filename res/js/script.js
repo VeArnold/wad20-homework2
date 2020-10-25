@@ -9,6 +9,7 @@ $(function () {
     });
 
     loadUserInfo();
+
     loadPosts()
         .then(function (response) {
             for (let i = 0; i < response.length; i++) {
@@ -66,6 +67,7 @@ $(function () {
                 success: function (response) {
                     $('#name').text(response.firstname + " " + response.lastname);
                     $('#email').text(response.email);
+                    $('.avatar').attr("src", response.avatar);
                 },
                 error: function () {
                     alert('Error loading user info.')
