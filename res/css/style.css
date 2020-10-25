@@ -81,6 +81,11 @@ nav div {
     padding: 10px;
 }
 
+nav div ul{
+    flex-grow: 2;
+    padding: 10px;
+}
+
 nav div img {
     height: 100%;
     width: 30px;
@@ -208,7 +213,7 @@ nav div.avatar-container {
     border: none;
 }
 
-.like-button.liked {
+.liked {
     background-color: #01579b;
 }
 
@@ -259,4 +264,16 @@ nav div.avatar-container {
     cursor: pointer;
 }
 
+
+.follow-button {
+    width: 120px;
+    height: 35px;
+    color: white;
+    background-color: purple;
+}
+
+.followed {
+    color: purple;
+    background-color: white;
+}
 

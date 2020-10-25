@@ -11,7 +11,7 @@ $(function () {
     });
 
     loadUserInfo();
-    dropdownLinks();
+    lemmo();
 
     loadPosts()
         .then(function (response) {
@@ -91,7 +91,7 @@ $(function () {
     }
 
 
-    function dropdownLinks () {
+    function lemmo () {
 
         $(".dropdown-item").click(function(){
     
@@ -108,7 +108,6 @@ $(function () {
 
 
 });
-
 
 
 
