@@ -18,7 +18,7 @@ $(function () {
     loadProfiles()
         .then(function (response) {
             for (let i = 0; i < response.length; i++) {
-                $('.main-container').append(`
+                $('.profile-container').append(`
                   <div class="profile">
                     <div class="profile-avatar">
                         <img src=${response[i].avatar} alt="Profile picture">

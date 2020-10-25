@@ -126,6 +126,14 @@ nav div.avatar-container {
     background-color: #ffffff;
 }
 
+.profile-container {
+    width: 50%;
+    min-height: 100%;
+    margin: auto auto;
+    padding: 90px 15px 15px 15px;
+    background-color: #ffffff;
+}
+
 .post {
     width: 80%;
     margin: 15px auto;
@@ -188,6 +196,28 @@ nav div.avatar-container {
 
 .post .post-title ~ .post-actions {
     padding: 10px;
+}
+
+.profile {
+    width: 30%;
+    margin: 15px auto;
+    box-shadow: 0 0 15px rgba(38, 50, 56, 0.33);
+    border-radius: 5px;
+}
+
+.profile .profile-avatar img {
+    height: 80px;
+    width: 80px;
+    margin-left: 15px;
+    border-radius: 100%;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.profile .profile-name {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 .like-button {
