@@ -1,5 +1,5 @@
 
-$(".main-container").on("click", ".follow-button", function(event){
+$(".profile-container").on("click", ".follow-button", function(event){
     $(this).toggleClass('followed');
     if ($(this).hasClass('followed')) {
         $(this).text("Followed");
