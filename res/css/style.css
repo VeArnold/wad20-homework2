@@ -135,20 +135,6 @@ nav div.avatar-container {
     background-color: #ffffff;
 }
 
-.profile-container {
-    align-content: center;
-    width: 50%;
-    min-height: 100%;
-    margin: auto auto;
-    padding: 90px 15px 15px 15px;
-    background-color: #ffffff;
-}
-
-.profile-container .profile {
-    display: flex;
-}
-
-
 .post {
     width: 80%;
     margin: 15px auto;
@@ -213,17 +199,36 @@ nav div.avatar-container {
     padding: 10px;
 }
 
+.profile-container {
+    width: 50%;
+    min-height: 100%;
+    margin: auto auto;
+    padding: 90px 0px 0px 0px;
+    background-color: #ffffff;
+}
+
+.profile-container .profile {
+    display: inline-grid;
+}
+
+
 .profile {
+    margin-top: 40px;
+    margin-left: 8%;
     align-content: center;
-    width: 40%;
-    margin: 15px auto;
+    width: 38%;
     box-shadow: 0 0 15px rgba(38, 50, 56, 0.33);
     border-radius: 5px;
+}
+
+.profile div {
+    margin: auto;
 }
 
 .profile .profile-avatar img {
     height: 80px;
     width: 80px;
+    margin-top: 15px;
     margin-left: 15px;
     border-radius: 100%;
     object-fit: cover;
@@ -254,7 +259,6 @@ nav div.avatar-container {
     background-color: #01579b;
 }
 
-/* Dropdown */
 .dropdown {
     display: none;
     flex-direction: column;
@@ -312,12 +316,4 @@ nav div.avatar-container {
 .followed {
     color: purple;
     background-color: white;
-}
-
-.firstColumn {
-    width: 30%;
-}
-
-.secondColumn {
-    width: 30%;
 }

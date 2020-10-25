@@ -3,8 +3,6 @@
 <head>
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="res/js/browseScript.js"></script>
     <link rel="stylesheet" href="res/css/style.css">
     <title>postIt! Just Post It</title>
 </head>
@@ -19,19 +17,19 @@
         </div>
         <div class="avatar-container">
             <img src="res/images/avatar.png" class="avatar" alt="Me">
-            <div class="avatar-dropdown">
-                <p id="name"></p>
-                <p id="email"></p>
-                <a href="./browse.html">Browse</a>
-                <br>
-                <a href="./login.html">Log out</a>
+            <div class="dropdown dropdown-user">
+                <div class = "dropdown-item-data" id="name"></div>
+                <div class = "dropdown-item-data" id="email"></div>
+                <div class="dropdown-item">Home</div>
+                <div class="dropdown-item">Log out</div>
             </div>
         </div>
     </nav>
 </header>
 <section class="profile-container">
-    <div class = "firstColumn"></div>
-    <div class = "secondColumn"></div>
 </section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="res/js/main.js"></script>
+<script src="res/js/browse.js"></script>
 </body>
 </html>
