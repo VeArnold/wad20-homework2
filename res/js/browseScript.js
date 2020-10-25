@@ -18,7 +18,8 @@ $(function () {
     loadProfiles()
         .then(function (response) {
             for (let i = 0; i < response.length; i++) {
-                $('.profile-container').append(`
+                if (i % 2 == 0) {
+                    $('.firstColumn').append(`
                   <div class="profile">
                     <div class="profile-avatar">
                         <img src=${response[i].avatar} alt="Profile picture">
@@ -31,6 +32,22 @@ $(function () {
                     </div>
                   </div>
                 `);
+
+                } else {
+                    $('.secondColumn').append(`
+                  <div class="profile">
+                    <div class="profile-avatar">
+                        <img src=${response[i].avatar} alt="Profile picture">
+                    </div>
+                    <div class="profile-name">
+                        <p>${response[i].firstname+" "+response[i].lastname}</p>
+                    </div>
+                    <div class="button">
+                      <button type="button" name="Follow" class="follow-button">Follow</button>
+                    </div>
+                  </div>
+                `);
+                }
             }
         })
         .catch(function () {
